@@ -161,7 +161,7 @@ nav.scrolled{border-color:var(--rule);background:rgba(247,244,239,.93);backdrop-
   .process-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
   .process-step { padding: 0 2rem 0 0; border-right: 1px solid rgba(255,255,255,0.12); }
   .process-step:last-child { border-right: none; padding-right: 0; }
-  .process-step:first-child { padding-left: 0; }
+  .process-step:not(:first-child) { padding-left: 2rem; }
   .process-step-num { font-family: var(--serif); font-style: italic; font-size: 2.5rem; color: rgba(255,255,255,0.2); margin-bottom: 1rem; transition: color 0.3s; }
   .process-step:hover .process-step-num { color: rgba(255,255,255,0.5); }
   .process-step-title { font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--terra-faint); margin-bottom: 0.8rem; }
@@ -534,6 +534,12 @@ footer{padding:1.5rem 4vw;border-top:1px solid var(--rule);display:flex;justify-
   .detail-gallery-item{margin:0 auto}
   .detail-gallery-item img{object-position:center}
   .detail-gallery-item.wide{grid-column:span 1;aspect-ratio:4/3}
+   .process-section{padding:4rem 1.5rem}
+.process-bg-text{font-size:6rem;bottom:-1rem}
+.process-heading{font-size:1.7rem;margin-bottom:2.5rem;max-width:100%}
+.process-steps{grid-template-columns:1fr;gap:0}
+.process-step{padding:0 0 2rem 0!important;border-right:none;border-bottom:1px solid rgba(255,255,255,0.12);margin-bottom:2rem}
+.process-step:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0!important}
 }
    
 @media(max-width:560px){
@@ -873,9 +879,9 @@ footer{padding:1.5rem 4vw;border-top:1px solid var(--rule);display:flex;justify-
   <h2 class="process-heading">How I work through a problem.</h2>
   <div class="process-steps">
     <div class="process-step"><div class="process-step-num">01</div><p class="process-step-title">Research</p><p class="process-step-desc">Understanding context, audience, and existing landscape before touching a tool.</p></div>
-    <div class="process-step" style="padding-left:2rem"><div class="process-step-num">02</div><p class="process-step-title">Explore</p><p class="process-step-desc">Visual exploration — moodboards, sketches, unexpected directions.</p></div>
-    <div class="process-step" style="padding-left:2rem"><div class="process-step-num">03</div><p class="process-step-title">Refine</p><p class="process-step-desc">Narrowing in. Building systems that scale and hold together consistently.</p></div>
-    <div class="process-step" style="padding-left:2rem"><div class="process-step-num">04</div><p class="process-step-title">Present</p><p class="process-step-desc">Communicating the reasoning — the design and the thinking behind it.</p></div>
+<div class="process-step"><div class="process-step-num">02</div><p class="process-step-title">Explore</p><p class="process-step-desc">Visual exploration — moodboards, sketches, unexpected directions.</p></div>
+<div class="process-step"><div class="process-step-num">03</div><p class="process-step-title">Refine</p><p class="process-step-desc">Narrowing in. Building systems that scale and hold together consistently.</p></div>
+<div class="process-step"><div class="process-step-num">04</div><p class="process-step-title">Present</p><p class="process-step-desc">Communicating the reasoning — the design and the thinking behind it.</p></div>
   </div>
 </section>
 
